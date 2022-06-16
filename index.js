@@ -38,6 +38,14 @@ const products = [
     {
         name: "Medium - 12 inch pizza",
         price:7.99
+    },
+    {
+        name: "Large - 16 inch pizza",
+        price:8.99
+    },
+    {
+        name:"Pizzanormous",
+        price:9.99
     }
 ]
 
