@@ -49,6 +49,12 @@ const products = [
     }
 ]
 
+function addToBasket(id){
+    let pizzaSize = document.getElementById(id).value;
+    console.log(pizzaSize);
+}
+
+
     /*
     Margherita
     Vegetarian
