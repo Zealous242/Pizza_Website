@@ -74,6 +74,12 @@ input {
     padding: 0;
 }
 
+.shoppingCart{
+    position: fixed; 
+    top: 6px;
+    right: 18px;
+}
+
 .center{
     margin: auto;
 }

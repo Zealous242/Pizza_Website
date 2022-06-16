@@ -30,7 +30,16 @@ function addPizza(){
     const newSelect = document.createElement("select");
     const newPizza1 = document.createTextNode("Margherita");
 
-const products = 
+const products = [
+    {
+        name: "Small - 8 inch pizza",
+        price: 6.99
+    },
+    {
+        name: "Medium - 12 inch pizza",
+        price:7.99
+    }
+]
 
     /*
     Margherita
