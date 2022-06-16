@@ -22,9 +22,6 @@ function changePizzaImg(pizzaHalf, pizzaImage){
     console.log(value);
 
     document.getElementById(pizzaImage).setAttribute("src", value);
-
-
-
 }
 
 function addPizza(){
@@ -33,7 +30,7 @@ function addPizza(){
     const newSelect = document.createElement("select");
     const newPizza1 = document.createTextNode("Margherita");
 
-
+const products = 
 
     /*
     Margherita
