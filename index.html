@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+    <header>
+        <div>
+            <img src="logo.jpg.png" class="logo">
+        </div>
+        <nav >
+            <div class="flexcontainer4">
+              <div><a href="#pizzas"><b>Pizzas</b></a></div>
+              <div><a href="#glutenFreePizzas"><b>Gluten-Free Pizzas</b></a></div>
+              <div><a href="#veganPizzas"><b>Vegan Pizzas</b></a></div>
+              <div><a href="#sides"><b>Sides</b></a></div>
+              <div><a href="#drinks"><b>Drinks</b></a></div>
+          </div>
+            </nav>
+    </header>
+    </div>
+    
+    <main>
+    
+     <section>
+         <h1 style="padding-top: 15%;" id="pizzas">Pizzas</h1>
+         <div class="flexcontainer">
+            <div>
+                <img src="margherita.jpg" alt="">
+                <p>Margherita</p>
+                <p><b>£<span id="price" >6.99<span></b></p>
+                <p>Size: 
+                    <select id="size" onChange="updatePrice('size', 'price')">
+                        <option value = "6.99">Small - 8''</option>
+                        <option value = "7.99">Medium - 12''</option>
+                        <option value = "8.99">Large - 16''</option>
+                        <option value = "9.99">Pizzanormous - 20''</option>
+                    </select>
+                </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="vegetarian.jpg" alt="">
+                <p>Vegetarian</p>
+                <p><b>£<span id="price2" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size2" onChange="updatePrice('size2', 'price2')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                    </p>
+                    <p>
+                        <form action="/action_page.php">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" max="">
+                          </form>
+                    </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="Mediterranean-Pizza-001.jpg" alt="">
+                <p>Mediterranean</p>
+                <p><b>£<span id="price3" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size3" onChange="updatePrice('size3', 'price3')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="mexican.jpg" alt="">
+                <p>Mexican</p>
+                <p><b>£<span id="price4" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size4" onChange="updatePrice('size4', 'price4')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="pepperoni.jpg" alt="">
+                <p>Pepperoni</p>
+                <p><b>£<span id="price5" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size5" onChange="updatePrice('size5', 'price5')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                    </p>
+                    <p>
+                        <form action="/action_page.php">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0" max="">
+                          </form>
+                    </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="farmhouse.jpg" alt="">
+                <p>Farmhouse</p>
+                <p><b>£<span id="price6" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size6" onChange="updatePrice('size6', 'price6')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="chickenAndSweetcorn.jpg" alt="">
+                <p>Chicken and Sweetcorn</p>
+                <p><b>£<span id="price7" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size7" onChange="updatePrice('size7', 'price7')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="barbecue.jpg" alt="">
+                <p>BBQ Chicken</p>
+                <p><b>£<span id="price8" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size8" onChange="updatePrice('size8', 'price8')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="meetball.jpg" alt="">
+                <p>Meatball</p>
+                <p><b>£<span id="price9" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size9" onChange="updatePrice('size9', 'price9')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="hawaiian.jpg" alt="">
+                <p>Hawaiian</p>
+                <p><b>£<span id="price10" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size10" onChange="updatePrice('size10', 'price10')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="garlic.jpg" alt="">
+                <p>Garlic</p>
+                <p><b>£<span id="price11" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size11" onChange="updatePrice('size11', 'price11')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="seafood.jpg" alt="">
+                <p>Seafood</p>
+                <p><b>£<span id="price12" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size12" onChange="updatePrice('size12', 'price12')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <p  id = "glutenFreePizzas"> </p>
+            <div>
+                <img src="mozzarella.jpg" alt="">
+                <p>Mozzarella</p>
+                <p><b>£<span id="price13" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size13" onChange="updatePrice('size13', 'price13')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+        </div>
+     </section>
+     <section>
+         <h1>Gluten Free Pizzas</h1>
+         <p  id = "veganPizzas"></p>
+         <div class="flexcontainer2">
+            <div>
+                
+                <img src="margherita.jpg" alt="">
+                <p>Gluten-Free Margherita</p>
+                <p><b>£<span id="price14" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size14" onChange="updatePrice('size14', 'price14')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="pepperoni.jpg" alt="">
+                <p>Gluten-Free Papperoni</p>
+                <p><b>£<span id="price15" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size15" onChange="updatePrice('size15', 'price15')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p >Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+         </div>
+     </section>
+     <section>
+         <h1>Vegan Pizzas</h1>
+         <p id="sides"></p>
+         <div class="flexcontainer3">
+            <div>
+                <img src="pepperoni.jpg" alt="">
+                <p>Vegan Papperoni</p>
+                <p><b>£<span id="price16" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size16" onChange="updatePrice('size16', 'price16')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="mushroom.jpg" alt="">
+                <p>Mushroom Pizza</p>
+                <p><b>£<span id="price17" >6.99<span></b></p>
+                    <p>Size: 
+                        <select id="size17" onChange="updatePrice('size17', 'price17')">
+                            <option value = "6.99">Small - 8''</option>
+                            <option value = "7.99">Medium - 12''</option>
+                            <option value = "8.99">Large - 16''</option>
+                            <option value = "9.99">Pizzanormous - 20''</option>
+                        </select>
+                    </p>
+                <p>Base: 
+                    <select id="base">
+                        <option value="">Thin Italian Base</option>
+                        <option value="">Stone Crust Base</option>
+                        <option value="">Chees Stuffed Crust Base</option>
+                        <option value="">Vegan Base</option>
+                        <option value="">Gluten-Free Base</option>
+                    </select>
+                </p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+         </div>
+     </section>
+     <section>
+        <h1>Order 50:50 Pizzas</h1>
+        <p>Have half of one pizza and half of another. For example, half chicken and sweetcorn and half vegetarian</p>
+        <div class="flexcontainer7">
+        <div>
+        <label for="Pizza">Choose the first pizza half:</label>
+        <select id="pizza-half2" name="first pizza half" onchange="changePizzaImg('pizza-half2', 'pizzaimage2')">
+            <option value="margherita.jpg">Margherita</option>
+            <option value="vegetarian.jpg">Vegetarian</option>
+            <option value="Mediterranean-Pizza-001.jpg">Mediterranean</option>
+            <option value="mexican.jpg">Mexican</option>
+            <option value="pepperoni.jpg">Pepperoni</option>
+            <option value="farmhouse.jpg">Farmhouse</option>
+            <option value="chickenAndSweetcorn.jpg">Chicken and Sweetcorn</option>
+            <option value="barbecue.jpg">BBQ Chicken</option>
+            <option value="meetball.jpg">Meatball</option>
+            <option value="hawaiian.jpg">Hawaiian</option>
+            <option value="garlic.jpg">Garlic</option>
+            <option value="seafood.jpg">Seafood</option>
+            <option value="mozzarella.jpg">Mozzarella</option>
+            <p><b>Gluten-Free Pizzas:</b></p>
+            <option value="gluetenfreeMargherita.jpg">Gluten-Free Margherita</option>
+            <option value="pepperoni.jpg">Gluten-Free Papperoni</option>
+            <p>Vegan Pizzas</p>
+            <option value="pepperoni.jpg">Vegan Papperoni</option>
+            <option value="mushroom.jpg">Mushroom Pizza</option>
+          </select> 
+          <img src="" id="pizzaimage2" >
+        </div>
+        <div>
+        <label for="Pizza">Choose the second pizza half:</label>
+        <select id="pizza-half1" name="first pizza half" onchange="changePizzaImg('pizza-half1', 'pizzaimage1')">
+            <option value="margherita.jpg">Margherita</option>
+            <option value="vegetarian.jpg">Vegetarian</option>
+            <option value="Mediterranean-Pizza-001.jpg">Mediterranean</option>
+            <option value="mexican.jpg">Mexican</option>
+            <option value="pepperoni.jpg">Pepperoni</option>
+            <option value="farmhouse.jpg">Farmhouse</option>
+            <option value="chickenAndSweetcorn.jpg">Chicken and Sweetcorn</option>
+            <option value="barbecue.jpg">BBQ Chicken</option>
+            <option value="meetball.jpg">Meatball</option>
+            <option value="hawaiian.jpg">Hawaiian</option>
+            <option value="garlic.jpg">Garlic</option>
+            <option value="seafood.jpg">Seafood</option>
+            <option value="mozzarella.jpg">Mozzarella</option>
+            <p><b>Gluten-Free Pizzas:</b></p>
+            <option value="gluetenfreeMargherita.jpg">Gluten-Free Margherita</option>
+            <option value="pepperoni.jpg">Gluten-Free Papperoni</option>
+            <p>Vegan Pizzas</p>
+            <option value="pepperoni.jpg">Vegan Papperoni</option>
+            <option value="mushroom.jpg">Mushroom Pizza</option>
+          </select> 
+          <img src="" id="pizzaimage1" >
+    </div>
+</div>
+<p style="text-align: center;"><button>Add To Basket</button></p>
+        <button class="btnAdd">Add Pizza</button>
+     </section>
+     <section>
+        <h1>Sides</h1>
+         <div class="flexcontainer5">
+            <div>
+                <img src="salad.jpg" alt="">
+                <p>Salad</p>
+                <p><b>£6.99</b></p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="garlicBread.png" alt="">
+                <p>Garlic Bread</p>
+                <p><b>£6.99</b></p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="cheesyGarlicBread.jpg" alt="">
+                <p>Cheesy Garlic Bread</p>
+                <p><b>£6.99</b></p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="coleslaw.jpg.png" alt="">
+                <p>Coleslaw</p>
+                <p><b>£6.99</b></p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+            <div>
+                <img src="chickenWings.jpg.png" alt="">
+                <p>Chicken Wings</p>
+                <p><b>£6.99</b></p>
+                <p>
+                    <form action="/action_page.php">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="0" max="">
+                      </form>
+                </p>
+                <button>Add to basket</button>
+            </div>
+         </div>
+     </section>
+     <section>
+        <h1>Drinks</h1>
+        <p id="drinks"></p>
+        <div class="flexcontainer6">
+           <div>
+               <img src="pepsi.jpg" alt="">
+               <p>Pepsi - 1 litre</p>
+               <p><b>£2.00</b></p>
+               <p>
+                   <form action="/action_page.php">
+                       <label for="quantity">Quantity:</label>
+                       <input type="number" id="quantity" name="quantity" min="0" max="">
+                     </form>
+               </p>
+               <button>Add to basket</button>
+           </div>
+           <div>
+               <img src="pepsiMax.jpg.png" alt="">
+               <p>Pepsi Max - 1 litre</p>
+               <p><b>£2.00</b></p>
+               <p>
+                   <form action="/action_page.php">
+                       <label for="quantity">Quantity:</label>
+                       <input type="number" id="quantity" name="quantity" min="0" max="">
+                     </form>
+               </p>
+               <button>Add to basket</button>
+           </div>
+           <div>
+               <img src="drPepper.jpg" alt="">
+               <p>Dr Pepper - 1 litre</p>
+               <p><b>£1.50</b></p>
+               <p>
+                   <form action="/action_page.php">
+                       <label for="quantity">Quantity:</label>
+                       <input type="number" id="quantity" name="quantity" min="0" max="">
+                     </form>
+               </p>
+               <button>Add to basket</button>
+           </div>
+           <div>
+               <img src="7up.png" alt="">
+               <p>7up - 1 litre</p>
+               <p><b>£1.50</b></p>
+               <p>
+                   <form action="/action_page.php">
+                       <label for="quantity">Quantity:</label>
+                       <input type="number" id="quantity" name="quantity" min="0" max="">
+                     </form>
+               </p>
+               <button>Add to basket</button>
+           </div>
+           <div>
+               <img src="tango.jpg.png" alt="">
+               <p>Tango - 1 litre</p>
+               <p><b>£1.50</b></p>
+               <p>
+                   <form action="/action_page.php">
+                       <label for="quantity">Quantity:</label>
+                       <input type="number" id="quantity" name="quantity" min="0" max="">
+                     </form>
+               </p>
+               <button>Add to basket</button>
+           </div>
+        </div>
+     </section>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>

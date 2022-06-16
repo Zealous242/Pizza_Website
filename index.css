@@ -1,0 +1,217 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width:200px;
+    height: 200px;
+    object-fit: contain;
+    margin:10px;
+}
+
+body{
+    background-image: url("papyrus.jpg");
+    
+}
+
+main{
+    margin-left: 8%;
+    margin-right: 8%;
+    
+}
+
+header{
+    background-color: orange;
+    width: 100%;
+    padding: 3px;
+    margin: -10px;
+    position: fixed;
+    top: 0;
+    box-shadow:0 10px 8px 5px rgba(0, 0, 0, 0.2);
+}
+nav{
+    width: 100%;
+    padding: 15px;
+    background-color:blanchedalmond;
+    margin-left:-10px;
+    position: sticky;
+    top: 98px;
+}
+
+h1{
+    margin-left: 10px;
+    font-size: 3em;
+    text-align: center;
+}
+
+button{
+    padding:5px;
+    margin:5px;
+}
+
+a{
+    color: black;
+    text-decoration-line: none;
+    font-size: 20px;
+}
+
+select{
+    width: 60%;
+}   
+
+input {
+    width: 45%;
+}
+
+.logo{
+    width: auto; 
+    height:75px; 
+    position: fixed; 
+    top: 6px;
+    left: -18px;
+    position: relative;
+    margin-left: 2%;
+    padding: 0;
+}
+
+.center{
+    margin: auto;
+}
+
+.imgdiv{
+    width: 200px;
+    height: 200px;
+}
+
+.pizzaDropDownMenu{
+    width: 50px;
+}
+
+.btnAdd{
+    width: 6em;
+  height: 2em;
+  font-size: 1.5em;
+  border: solid black;
+  background-color: #eeeff2;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 0.2em;
+  outline: none;
+  transition: all 100ms ease-in;
+}
+
+.flexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexcontainer > div {
+    background-color: #f1f1f1;
+    width: auto;
+    text-align: center;
+    margin: 8px;
+    border: solid black;
+  }
+
+.flexcontainer2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.flexcontainer2 > div {
+    background-color: #f1f1f1;
+    width: auto;
+    text-align: center;
+    margin: 8px;
+    border: solid black;
+}
+
+  .flexcontainer3{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexcontainer3 > div {
+    background-color: #f1f1f1;
+    width: auto;
+    text-align: center;
+    margin: 8px;
+    border: solid black;
+}
+
+.flexcontainer4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexcontainer4 > div {
+    background-color: #f1f1f1;
+    width: auto;
+    text-align: center;
+    margin: 8px;
+    border: solid orange;
+    padding: 10px;
+    width: 200px;
+}
+
+.flexcontainer5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexcontainer5 > div {
+    background-color: #f1f1f1;
+    width: auto;
+    text-align: center;
+    margin: 8px;
+    border: solid black;
+}
+
+.flexcontainer6{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexcontainer6 > div {
+    background-color: #f1f1f1;
+    width: auto;
+    text-align: center;
+    margin: 8px;
+    border: solid black;
+}
+
+.flexcontainer7{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexcontainer7 > div {
+    background-color: #f1f1f1;
+    width: 30%;
+    text-align: center;
+    margin: 8px;
+    border: solid black;
+    padding: 10px;
+}
+
+position1{
+    position: fixed;
+}
